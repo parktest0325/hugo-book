@@ -1,3 +1,43 @@
 /* You can override SASS variables here. */
 
 // @import "plugins/dark";
+
+$color-blue: #005ecb;
+$color-lightblue: #42A5F5;
+$color-gray: #CCCCCC;
+$color-red: #bf616a;
+$color-lightgray: #f9f9f9;
+
+.markdown {
+  h2 {
+    font-size: 2rem; /* 글꼴 크기 키우기 */
+    font-weight: bolder !important; /* 텍스트를 두껍게 표시 */
+    padding-left: 15px; /* 텍스트 왼쪽 여백 추가 */
+    border-left: 5px solid $color-blue; /* 왼쪽 테두리 추가 및 색상 지정 */
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bolder !important;
+
+    border-left: 10px solid $color-blue;
+    border-bottom: 3px solid $color-blue;
+
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: $color-blue;
+  }
+
+  p code {
+    color: $color-red;
+    font-size: 1rem !important;
+    background-color: $color-lightgray;
+  }
+
+}
+
+img {
+  border: 1px solid $color-gray;
+  border-radius: 0.25rem;
+}
