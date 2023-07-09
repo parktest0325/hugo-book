@@ -39,11 +39,11 @@
     <a href="{{ .Page.Params.BookHref }}" class="{{ if $current }}active{{ end }}" target="_blank" rel="noopener">
       {{- partial "docs/title" .Page -}}
     </a>
-  {{ else if .Page.Content }}
+  {{ else if .Page.Params.FakeMenu }}
+    <span>{{- partial "docs/title" .Page -}}</span>
+  {{ else }}
     <a href="{{ .Page.RelPermalink }}" class="{{ if $current }}active{{ end }}">
       {{- partial "docs/title" .Page -}}
     </a>
-  {{ else }}
-    <span>{{- partial "docs/title" .Page -}}</span>
   {{ end }}
 {{ end }}
