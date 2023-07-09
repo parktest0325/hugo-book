@@ -1,3 +1,5 @@
+<!-- 나중에 style 따로 빼기 -->
+<div style="display: flex; justify-content: space-between; align-items: center;">
 {{ with .Date }}
   <h5>{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</h5>
 {{ end }}
@@ -11,6 +13,7 @@
   </div>
   {{ end }}
 {{ end }}
+</div>
 
 {{ if .Params.image }}
 <p>
